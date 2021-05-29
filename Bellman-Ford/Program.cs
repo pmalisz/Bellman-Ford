@@ -122,8 +122,10 @@ namespace Bellman_Ford
     {
         public static void Main(string[] args)
         {
+            // source path for file with adjacency list
             string path = "../../../graph.txt";
             var graph = new Graph(path);
+            // idx of source vertex (nr of line in file counted from 0)
             graph.BellmanFord(0);
             graph.Print();
         }
